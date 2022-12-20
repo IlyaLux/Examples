@@ -10,7 +10,7 @@ if (a > 1)
 {
     while (b <= a)
     {
-        if (b%2==0)
+        if (b % 2 == 0)
         {
             Write(b + " ");
         }
@@ -21,7 +21,7 @@ else
 {
     while (b >= a)
     {
-        if (b%2==0)
+        if (b % 2 == 0)
         {
             Write(b + " ");
         }
