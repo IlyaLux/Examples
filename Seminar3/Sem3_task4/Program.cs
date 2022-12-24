@@ -7,8 +7,8 @@ WriteLine("Введите количество деталей");
 if (!int.TryParse(ReadLine(), out int a))
 {
     WriteLine("ошибка, введите число, а не текст");
+    return;
 }
-
 
 if (a % 6 == 0)
 {
