@@ -5,12 +5,15 @@
 using static System.Console;
 Clear();
 
-int[] ar = GetArray();
-GetArray();
+// int[] ar = new int[3];    // объявить и заполнить массив
+// FillArray(ar);
+
+ int[] ar = GetArray(50);   // объявить и заполнить массив
+
 PrintArray(ar);
 
 
-void FullArray(int[] array)
+void FillArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -40,9 +43,9 @@ void PrintArray(int[] array)
 
 
 
-    
-    
-        
-    
+
+
+
+
 
 
