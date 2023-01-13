@@ -2,26 +2,26 @@
 Clear();
 
 WriteLine("Введите число");
-int B = int.Parse(ReadLine());
-int sum = summa(B);
+int num = int.Parse(ReadLine());
+int sum = summa(num);
 WriteLine(sum);
 
 
 
 
-int summa(int A)
+int summa(int number)
 {
     int result = 1;
-    int sum = 0;
+    int summ = 0;
 
-    while (result < A)
+    while (result < number+1)
     {
-        if (A % result = 0)
+        if (number % result == 0)
         {
-            sum += result;
+            summ += result;
         }
 
         result++;
     }
-    return result;
+    return summ;
 }
