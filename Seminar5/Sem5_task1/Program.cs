@@ -21,13 +21,14 @@ foreach (int a in array)
 
 WriteLine($"{negativeSum}   {positiveSum}");
 
-int [] GetArray( int size, int minValue, int maxValue){
-    int[] resultArray = new int [size];
+int[] GetArray(int size, int minValue, int maxValue)
+{
+    int[] resultArray = new int[size];
 
     Random random = new Random();
     for (int i = 0; i < size; i++)
     {
-        resultArray[i] = random.Next(minValue, maxValue +1);
+        resultArray[i] = random.Next(minValue, maxValue + 1);
     }
 
     return resultArray;
