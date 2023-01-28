@@ -12,17 +12,33 @@
 using static System.Console;
 Clear();
 
-int[,] array = GetMatrixArray(5,6,-10,10);
+int[,] array = GetMatrixArray(5, 6, -10, 10);
+Write("Введите номер строки искомого элемента:");
+
+if (!int.TryParse(ReadLine(), out int row) || row < 0)
+{
+    WriteLine("Номер строки - положительное целое число");
+    return;
+}
+
+Write("Введите номер столбца искомого элемента:");
+if (!int.TryParse(ReadLine(), out int colum) || colum < 0)
+{
+    WriteLine("Номер столбца - положительное целое число");
+    return;
+}
+WriteLine();
+GetElementFromMatrix(array);
+WriteLine();
 PritnMatrix(array);
 
 
 
 
-
-
-
-
-
+void GetElementFromMatrix(int[,] matrixArray)
+{
+    WriteLine(row > matrixArray.GetLength(0) - 1 || colum > matrixArray.GetLength(1) - 1 ? "Выход за пределы массива" : $"На позиции {row},{colum} элемент ({matrixArray[row, colum]})");
+}
 
 int[,] GetMatrixArray(int rows, int colums, int minValue, int maxValue)
 {
