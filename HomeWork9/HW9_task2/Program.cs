@@ -6,14 +6,14 @@
 using static System.Console;
 Clear();
 
-WriteLine(GetSummNumbers(1,3));
+WriteLine(GetSummNumbers(1, 15));
 
 
 
 int GetSummNumbers(int num1, int num2)
 {
     int summ = 0;
-    if (num1 == num2) return summ;
+    if (num1 == num2) return num1;
     if (num1 > num2)
     {
         return summ += GetSummNumbers(num1 - 1, num2) + num1;
